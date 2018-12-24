@@ -106,13 +106,7 @@ public class Application {
             System.out.println("Type the name of file to be saved");
             input = sc.nextLine();
             try {
-                //diagramBuilder.saveToImage(bufferedImage, input, "png"); //works bad
-                if(input.contains("/") || input.contains("\\")) {
-                    Path pathToFile = Paths.get(input + ".png");
-                    Files.createDirectories(pathToFile.getParent());
-                    Files.createFile(pathToFile);
-                }
-                ImageIO.write(bufferedImage, "png",new File(input + ".png"));
+                diagramBuilder.saveToImage(bufferedImage, input, "png");
                 System.out.println("Saved successfully");
             } catch (IOException e) {
                 System.out.println("Error: can't save file");

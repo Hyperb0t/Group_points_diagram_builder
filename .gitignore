@@ -2,9 +2,10 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
+*.png
 *.csv
 META-INF/
-J804_Groshev_Berendakova_Ermakov_HomeProject.iml
+*.iml
 .idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
